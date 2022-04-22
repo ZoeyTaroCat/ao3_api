@@ -4,6 +4,15 @@
 
 This is an unofficial API that lets you access some of AO3's (archiveofourown.org) data through Python.
 
+## Fork Info
+
+Updated to v2.2.1 release from the [upstream repo](https://github.com/ArmindoFlores/ao3_api/releases/tag/v2.2.1).
+
+### Changelog:
+```md
++ Added avatar src return in User.get_avatar() function.
+```
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install AO3 API.

@@ -108,14 +108,14 @@ class User:
         """Returns a tuple containing the name of the file and its data
 
         Returns:
-            tuple: (name: str, img: bytes)
+            tuple: (src: str, name: str, img: bytes)
         """
         
         icon = self._soup_profile.find("p", {"class": "icon"})
         src = icon.img.attrs["src"]
         name = src.split("/")[-1].split("?")[0]
         img = self.get(src).content
-        return name, img
+        return src, name, img
     
     @threadable.threadable
     def subscribe(self):
